@@ -1,38 +1,71 @@
-# sv
+# Spoon - AI Document Analyzer
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+![Spoon Interface Preview](https://github.com/user-attachments/assets/06c7dc2a-b59b-4218-8439-ce05e91f504b)
 
-## Creating a project
+Spoon is a lightweight AI-powered tool that analyzes documents and GitHub repositories to extract key insights and technical information.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## ✨ Features
 
-```sh
-# create a new project in the current directory
-npx sv create
+- **📄 File Analysis**  
+  Supports PDF and Markdown documents with automatic content parsing
+- **🐙 GitHub Integration**  
+  Analyze public repositories by URL or `owner/repo` format
+- **🔍 Smart Insights**  
+  Extracts:
+  - Key features and use cases
+  - Technology stack identification
+  - Project structure overview
+  - Document statistics (word count, sections, etc.)
+- **🎨 Clean Interface**  
+  Intuitive tab-based navigation with responsive design
 
-# create a new project in my-app
-npx sv create my-app
-```
+## 🚀 Quick Start
 
-## Developing
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chinni-03/spoon.git
+   cd spoon
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```sh
-npm run dev
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+4. Open in your browser:
+   ```text
+   http://localhost:5173
+   ```
 
-## Building
+## 📖 Usage Guide
 
-To create a production version of your app:
+### For Document Analysis
+1. Select the "Upload File" tab
+2. Choose a PDF or Markdown file
+3. View automatically generated analysis
 
-```sh
-npm run build
-```
+### For GitHub Analysis
+1. Select the "GitHub Repo" tab
+2. Enter repository URL (e.g., `https://github.com/owner/repo` or `owner/repo`)
+3. Click "Analyze" to view insights
 
-You can preview the production build with `npm run preview`.
+## 🛠️ Tech Stack
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+| Technology | Purpose |
+|------------|---------|
+| [SvelteKit](https://kit.svelte.dev/) | Frontend framework |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS styling |
+| [Marked.js](https://marked.js.org/) | Markdown parsing |
+| [GitHub API](https://docs.github.com/en/rest) | Repository analysis |
+
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/chinni-03/spoon/blob/main/LICENSE) file for details.
+
+---
+
+**Maintained by** [Harshini Vijendra Kumar](https://github.com/chinni-03)
